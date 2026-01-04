@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — Agency Hosting Guide</title>
+    <meta name="description" content="Contact Agency Hosting Guide." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="index.html">Agency Hosting Guide</a>
+        <nav class="nav">
+          <a href="index.html">Guide</a>
+          <a href="about.html">About</a>
+          <a href="disclosure.html">Disclosure</a>
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container section">
+      <h1>Contact</h1>
+      <p class="muted">
+        Have a correction, want to suggest a host, or found a broken link? Send a note:
+      </p>
+
+      <!-- Replace action with Formspree or your own handler -->
+      <form class="card" method="post" action="#">
+        <label class="control">
+          <span>Name</span>
+          <input type="text" name="name" required />
+        </label>
+
+        <label class="control">
+          <span>Email</span>
+          <input type="email" name="email" required />
+        </label>
+
+        <label class="control">
+          <span>Message</span>
+          <input type="text" name="message" required />
+        </label>
+
+        <button class="btn primary" type="submit">Send</button>
+
+        <p class="muted" style="margin-top:10px;">
+          Tip: plug in a free Formspree endpoint here and you’re done.
+        </p>
+      </form>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <div class="footer-left">
+          <strong>Agency Hosting Guide</strong>
+          <span class="dot">•</span>
+          <a href="disclosure.html">Affiliate disclosure</a>
+        </div>
+        <div class="footer-right muted">© <span id="year"></span></div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
