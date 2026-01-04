@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>/</loc></url>
-  <url><loc>/about.html</loc></url>
-  <url><loc>/disclosure.html</loc></url>
-  <url><loc>/contact.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://agencywphosting.com/</loc></url>
+  <url><loc>https://agencywphosting.com/about.html</loc></url>
+  <url><loc>https://agencywphosting.com/disclosure.html</loc></url>
+  <url><loc>https://agencywphosting.com/contact.html</loc></url>
 </urlset>
