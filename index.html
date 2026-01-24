@@ -77,6 +77,13 @@
       <section class="hero">
         <div class="hero-copy">
           <h1>The Best Managed WordPress Hosts for Agencies Running 10+ Client Sites</h1>
+
+          <!-- NEW: publisher-style byline (less "AI SaaS landing page") -->
+          <p class="byline">
+            Updated <time id="updatedTime" datetime="">—</time> · Built for agencies managing <strong>10+ WordPress sites</strong> ·
+            <a href="#evaluation" class="secondary-link">How we evaluate</a>
+          </p>
+
           <p class="lead">
             Once you manage 10+ client sites, hosting stops being “infrastructure” and starts being a business risk.
             This guide compares managed WordPress hosts that help agencies avoid downtime, reduce babysitting,
@@ -89,15 +96,13 @@
           </div>
 
           <div class="cta-row">
-            <a class="btn primary" href="#comparison">See comparison table</a>
+            <a class="btn" href="#comparison">See comparison table</a>
             <a class="btn" href="#top-pick">Jump to top pick</a>
           </div>
 
-          <p class="micro">
-            <span class="pill">Agency workflows</span>
-            <span class="pill">Staging & cloning</span>
-            <span class="pill">Predictable scaling</span>
-            <span class="pill">Support that answers</span>
+          <!-- REPLACED: pill spam -> simple editorial “focus” line -->
+          <p class="micro muted">
+            Focus: workflow fit · predictable scaling · support competence
           </p>
         </div>
 
@@ -108,9 +113,7 @@
             <li><strong>Value pick:</strong> the host that stays stable when you scale without punishing overages.</li>
             <li><strong>Power pick:</strong> the host for dev-heavy teams who want more control and don’t mind complexity.</li>
           </ul>
-          <p class="note">
-            Note: “Best” depends on your agency model. This page is built to help you choose fast and move on.
-          </p>
+          <p class="note">Note: “Best” depends on your agency model. This page is built to help you choose fast and move on.</p>
         </aside>
       </section>
 
@@ -122,9 +125,8 @@
             <select id="filter">
               <option value="all">All picks</option>
               <option value="default">Default pick</option>
-              <option value="value">Best value</option>
-              <option value="power">Power / dev-heavy</option>
               <option value="simple">Simple scaling</option>
+              <option value="ecosystem">Ecosystem pick</option>
             </select>
           </label>
 
@@ -141,7 +143,7 @@
           <h2>Comparison Table</h2>
           <p class="sub">
             This is the decision engine. Each pick has a clear role so you don’t waste time.
-            Replace the placeholder CTAs with affiliate links once approved.
+            CTAs use placeholders for now — swap them with your affiliate links + discount codes when ready.
           </p>
         </div>
 
@@ -174,71 +176,49 @@
                 <td>Known for fast, competent support (critical when clients are yelling).</td>
                 <td>Can be pricier than DIY/IaaS-style setups.</td>
                 <td><strong>Best “safe default”</strong> for most agencies running 10–50 client sites.</td>
-                <td><a class="btn small" href="#" rel="nofollow noopener">View plans</a></td>
-              </tr>
-
-              <tr data-tags="power dev-heavy control performance">
                 <td>
-                  <div class="host">
-                    <div class="host-name">WP Engine</div>
-                    <div class="host-tag">Power pick</div>
-                  </div>
+                  <a class="btn small" href="https://kinsta.com/?kaid=XRLCUACNIAKC" rel="nofollow noopener" target="_blank">View plans</a>
+                  <div class="tiny muted offerline">Partner offer: <span class="offer" data-offer-for="KINSTA">Check partner portal</span> <span class="codewrap" data-codewrap-for="KINSTA" hidden>(Code: <code data-code-for="KINSTA"></code>)</span></div>
                 </td>
-                <td>Teams that want an enterprise-leaning managed platform and deeper tooling.</td>
-                <td>Mature workflows; strong tooling for teams that run lots of client environments.</td>
-                <td>Scaling is solid, but read plan limits and add-ons carefully for margin predictability.</td>
-                <td>Generally strong; better for teams comfortable navigating platform options.</td>
-                <td>Can get expensive as you add sites/features; complexity can creep.</td>
-                <td><strong>Best for larger agencies</strong> that want mature platform features and don’t mind cost.</td>
-                <td><a class="btn small" href="#" rel="nofollow noopener">See pricing</a></td>
-              </tr>
-
-              <tr data-tags="value price value simple scaling">
-                <td>
-                  <div class="host">
-                    <div class="host-name">Cloudways</div>
-                    <div class="host-tag">Best value</div>
-                  </div>
-                </td>
-                <td>Agencies that want cost control and can handle slightly more “ops” thinking.</td>
-                <td>Good flexibility; less “pure managed WP” and more “managed cloud hosting” feel.</td>
-                <td>Often strong value, but predictability depends on how you manage resources/instances.</td>
-                <td>Decent, but the experience is more platform-like than concierge-managed.</td>
-                <td>Not as hands-off as fully managed WP hosts; requires more attention.</td>
-                <td><strong>Best value</strong> if you care about margins and can handle a bit more configuration.</td>
-                <td><a class="btn small" href="#" rel="nofollow noopener">Start</a></td>
               </tr>
 
               <tr data-tags="simple agencies workflow staging">
                 <td>
                   <div class="host">
-                    <div class="host-name">Flywheel</div>
+                    <div class="host-name">Pressable</div>
                     <div class="host-tag">Simple scaling</div>
                   </div>
                 </td>
-                <td>Agencies that want a friendly UX and smoother client-site management.</td>
-                <td>Agency-friendly workflows; staging and team collaboration are the focus.</td>
-                <td>Good for growth, but confirm how pricing maps to your client portfolio.</td>
-                <td>Strong enough for most agency needs; good day-to-day experience.</td>
-                <td>May be less ideal for extreme performance edge cases.</td>
-                <td><strong>Best for agency ops</strong> when you want a clean workflow-first experience.</td>
-                <td><a class="btn small" href="#" rel="nofollow noopener">View plans</a></td>
+                <td>Agencies that want a straightforward managed WP host (no enterprise drama).</td>
+                <td>Solid managed basics; easy to run a portfolio without turning hosting into an internal project.</td>
+                <td>Plans are simple; confirm site counts and storage so scaling stays predictable.</td>
+                <td>Reliable baseline support; good for day-to-day operations.</td>
+                <td>Less differentiated than the top pick if you need advanced perf tooling or edge cases.</td>
+                <td><strong>Best “simple managed”</strong> option if you want clean pricing and easy operations.</td>
+                <td>
+                  <a class="btn small" href="https://automattic.pxf.io/c/6874680/3436741/22744?adid=3436741" rel="nofollow noopener" target="_blank">See pricing</a>
+                  <a class="link tiny secondary-link" href="https://automattic.pxf.io/c/6874680/3436741/22744?u=https%3A%2F%2Fpressable.com%2Ffeatures%2Fbuild%2Fwordpress-cloud-hosting-platform%2F&adid=3436741" rel="nofollow noopener" target="_blank">Infrastructure details</a>
+                  <div class="tiny muted offerline">Partner offer: <span class="offer" data-offer-for="PRESSABLE">Check partner portal</span> <span class="codewrap" data-codewrap-for="PRESSABLE" hidden>(Code: <code data-code-for="PRESSABLE"></code>)</span></div>
+                </td>
               </tr>
 
-              <tr data-tags="default performance cdn support predictable">
+              <tr data-tags="ecosystem wordpresscom woocommerce jetpack automattic">
                 <td>
                   <div class="host">
-                    <div class="host-name">Pressable</div>
-                    <div class="host-tag">Runner-up</div>
+                    <div class="host-name">Automattic Ecosystem</div>
+                    <div class="host-tag">Ecosystem pick</div>
                   </div>
                 </td>
-                <td>Agencies that want a managed WP host with a straightforward product posture.</td>
-                <td>Solid managed feature set; good baseline for many agency stacks.</td>
-                <td>Predictable enough for many portfolios; confirm site count vs plan structure.</td>
-                <td>Generally reliable; support experience varies by issue severity.</td>
-                <td>May not differentiate as strongly vs top two picks depending on your needs.</td>
-                <td><strong>Strong runner-up</strong> if the top pick doesn’t fit your budget or workflow.</td>
-                <td><a class="btn small" href="#" rel="nofollow noopener">See pricing</a></td>
+                <td>Teams that want a single vendor ecosystem (WordPress.com, WooCommerce, Jetpack, etc.).</td>
+                <td>Convenient if your stack is already Automattic-heavy; reduces vendor sprawl.</td>
+                <td>Predictability varies by product/plan — read the fine print before standardizing.</td>
+                <td>Support is product-dependent; usually fine, but not always “agency concierge.”</td>
+                <td>Not always ideal for high-performance, high-custom agency builds.</td>
+                <td><strong>Best when you’re all-in</strong> on Automattic tools and want fewer moving parts.</td>
+                <td>
+                  <a class="btn small" href="https://automattic.pxf.io/c/6874680/3719513/22744?adid=3719513" rel="nofollow noopener" target="_blank">Explore options</a>
+                  <div class="tiny muted offerline">Partner offer: <span class="offer" data-offer-for="AUTOMATTIC">Check partner portal</span> <span class="codewrap" data-codewrap-for="AUTOMATTIC" hidden>(Code: <code data-code-for="AUTOMATTIC"></code>)</span></div>
+                </td>
               </tr>
             </tbody>
           </table>
@@ -246,7 +226,7 @@
 
         <div class="disclosure-inline">
           <strong>Disclosure:</strong> Some links may be affiliate links. If you buy through them, we may earn a commission at no extra cost to you.
-          <a href="disclosure.html">Details</a>.
+          <a href="disclosure.html" class="secondary-link">Details</a>.
         </div>
       </section>
 
@@ -254,16 +234,19 @@
       <section id="top-pick" class="section">
         <div class="section-head">
           <h2>Top Pick for Most Agencies</h2>
-          <p class="sub">
-            If you just want a safe default that won’t create client drama, start here.
-          </p>
+          <p class="sub">If you just want a safe default that won’t create client drama, start here.</p>
         </div>
 
         <article class="pick-card">
           <div class="pick-head">
             <h3>Kinsta — Best “safe default” for agencies managing 10–50 sites</h3>
-            <a class="btn primary small" href="#" rel="nofollow noopener">View plans</a>
+            <a class="btn primary small" href="https://kinsta.com/?kaid=XRLCUACNIAKC" rel="nofollow noopener" target="_blank">View plans</a>
           </div>
+
+          <p class="whyline">Why we recommend this: Reliable performance, fast support, and predictable scaling for multi-site agencies.</p>
+
+          <div class="deal">
+            <strong>Deal:</strong> Partner offer: <span class="offer" data-offer-for="KINSTA">Check partner portal</span> <span class="codewrap" data-codewrap-for="KINSTA" hidden>(Code: <code data-code-for="KINSTA"></code>)</span></div>
 
           <div class="pick-grid">
             <div>
@@ -281,9 +264,7 @@
               </ul>
 
               <h4>Verdict</h4>
-              <p>
-                Choose this if you want <strong>low drama</strong>, predictable scaling, and fewer “why is the site down?” tickets.
-              </p>
+              <p>Choose this if you want <strong>low drama</strong>, predictable scaling, and fewer “why is the site down?” tickets.</p>
             </div>
           </div>
         </article>
@@ -298,42 +279,46 @@
 
         <div class="cards">
           <article class="card">
-            <h3>WP Engine — Power pick</h3>
-            <p class="muted">Best for larger agencies that want mature platform features and can justify the price.</p>
+            <h3>Pressable — Simple scaling</h3>
+            <p class="muted">Best for agencies that want managed WordPress without enterprise complexity.</p>
             <ul>
-              <li>Strong platform tooling for teams</li>
-              <li>Scaling can be excellent</li>
-              <li>Watch add-ons / plan limits</li>
+              <li>Clean, straightforward managed hosting</li>
+              <li>Easy to standardize across a portfolio</li>
+              <li>Confirm site limits vs plan tiers</li>
             </ul>
-            <a class="btn small" href="#" rel="nofollow noopener">See pricing</a>
+            <a class="btn small" href="https://automattic.pxf.io/c/6874680/3436741/22744?adid=3436741" rel="nofollow noopener" target="_blank">See pricing</a>
+            <div class="tiny muted whyline">Why we recommend this: Automattic-backed managed WordPress hosting with clean workflows and predictable tiers.</div>
+            <div class="tiny muted offerline">Partner offer: <span class="offer" data-offer-for="PRESSABLE">Check partner portal</span> <span class="codewrap" data-codewrap-for="PRESSABLE" hidden>(Code: <code data-code-for="PRESSABLE"></code>)</span></div>
           </article>
 
           <article class="card">
-            <h3>Cloudways — Best value</h3>
-            <p class="muted">Best for agencies protecting margins who can handle a bit more platform thinking.</p>
+            <h3>Automattic — Ecosystem pick</h3>
+            <p class="muted">Best when you want fewer vendors across WordPress.com, WooCommerce, and Jetpack.</p>
             <ul>
-              <li>Cost control</li>
-              <li>Flexible setups</li>
-              <li>Less “concierge-managed”</li>
+              <li>One vendor for key WP products</li>
+              <li>Good fit for simpler builds + Woo stacks</li>
+              <li>Read plan limits carefully</li>
             </ul>
-            <a class="btn small" href="#" rel="nofollow noopener">Start</a>
+            <a class="btn small" href="https://automattic.pxf.io/c/6874680/3719513/22744?adid=3719513" rel="nofollow noopener" target="_blank">Explore options</a>
+            <div class="tiny muted whyline">Why we recommend this: One vendor across core WordPress products when you want fewer tools to manage.</div>
+            <div class="tiny muted offerline">Partner offer: <span class="offer" data-offer-for="AUTOMATTIC">Check partner portal</span> <span class="codewrap" data-codewrap-for="AUTOMATTIC" hidden>(Code: <code data-code-for="AUTOMATTIC"></code>)</span></div>
           </article>
 
           <article class="card">
-            <h3>Flywheel — Simple scaling</h3>
-            <p class="muted">Best for workflow-first agencies who value UX and smooth client site management.</p>
+            <h3>Want the expanded list?</h3>
+            <p class="muted">We’re keeping the V1 guide tight. More picks will be added once we have verified programs and clean terms.</p>
             <ul>
-              <li>Friendly agency workflows</li>
-              <li>Solid staging experience</li>
-              <li>Confirm scaling economics</li>
+              <li>No unverified affiliate pushes</li>
+              <li>No “best hosting” fluff</li>
+              <li>Only what we can stand behind</li>
             </ul>
-            <a class="btn small" href="#" rel="nofollow noopener">View plans</a>
+            <a class="btn small" href="contact.html">Request a host to add</a>
           </article>
         </div>
       </section>
 
       <!-- EVALUATION -->
-      <section class="section">
+      <section class="section" id="evaluation">
         <div class="section-head">
           <h2>How We Evaluated Hosts for 10+ Client Agencies</h2>
           <p class="sub">This isn’t “best hosting.” It’s what matters when you’re responsible for client sites at scale.</p>
@@ -365,86 +350,4 @@
       <section class="section">
         <div class="section-head">
           <h2>Cost Reality Check</h2>
-          <p class="sub">Managed hosting is expensive compared to shared hosting — because it replaces labor and reduces risk.</p>
-        </div>
-
-        <div class="callout">
-          <p>
-            If one preventable outage costs you <strong>one retainer month</strong>, you’ve already paid for a year of better hosting.
-            Agencies don’t buy “cheap.” They buy <strong>less operational drag</strong>.
-          </p>
-        </div>
-      </section>
-
-      <!-- FAQ -->
-      <section class="section" id="faq">
-        <div class="section-head">
-          <h2>FAQs</h2>
-        </div>
-
-        <details class="faq">
-          <summary>Is managed WordPress hosting worth it for agencies?</summary>
-          <p>
-            Often, yes—once you’re managing 10+ client sites. The win is fewer fires: better support, reliable backups, staging workflows,
-            and less time spent debugging hosting issues.
-          </p>
-        </details>
-
-        <details class="faq">
-          <summary>Should agencies use WordPress multisite?</summary>
-          <p>
-            Sometimes, but it adds operational complexity. Many agencies prefer isolated sites for client separation and easier migrations.
-            If you do use multisite, pick a host that supports your workflow and scaling constraints.
-          </p>
-        </details>
-
-        <details class="faq">
-          <summary>How should agencies bill clients for hosting?</summary>
-          <p>
-            Most agencies either bundle hosting into retainers or pass through a predictable line item. Choose hosts with clear plan tiers
-            and understandable scaling so you can price confidently.
-          </p>
-        </details>
-
-        <details class="faq">
-          <summary>What matters most at 10+ sites?</summary>
-          <p>
-            Support competence, predictable scaling, and workflows (staging/backups/migrations). Raw “speed claims” matter less than
-            reliability and fewer late-night emergencies.
-          </p>
-        </details>
-      </section>
-
-      <!-- FINAL RECO -->
-      <section class="section final">
-        <h2>Final Recommendation</h2>
-        <p>
-          If you manage <strong>10+ client sites</strong>, start with the <strong>Top Pick</strong> and move on.
-          If you’re margin-first, choose the <strong>Best Value</strong>. If you’re dev-heavy and want platform tooling, choose the <strong>Power Pick</strong>.
-        </p>
-        <div class="cta-row">
-          <a class="btn primary" href="#top-pick">Jump to top pick</a>
-          <a class="btn" href="#comparison">Back to table</a>
-        </div>
-        <p class="micro muted">
-          Last updated: <span id="lastUpdated">—</span>
-        </p>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-row">
-        <div class="footer-left">
-          <strong>Agency Hosting Guide</strong>
-          <span class="dot">•</span>
-          <a href="disclosure.html">Affiliate disclosure</a>
-          <span class="dot">•</span>
-          <a href="contact.html">Contact</a>
-        </div>
-        <div class="footer-right muted">© <span id="year"></span></div>
-      </div>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
-</html>
+          <p class="sub">Managed hosting is expensive compared
