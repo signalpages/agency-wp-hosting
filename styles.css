@@ -260,6 +260,23 @@ select:focus, input[type="search"]:focus { border-color: rgba(29, 78, 216, 0.5);
   color: var(--muted);
 }
 
+/* Editorial link under hero (homepage → money page) */
+.editorial-link {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.editorial-link a {
+  color: var(--accent);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.editorial-link a:hover {
+  text-decoration-thickness: 2px;
+}
 
 /* Secondary affiliate links */
 .secondary-link {
