@@ -15,7 +15,8 @@
       href="https://agencywphosting.com/best-managed-wordpress-hosting-for-agencies/"
     />
 
-    <link rel="stylesheet" href="/styles.css" />
+    <!-- cache-bust while iterating; remove or update later -->
+    <link rel="stylesheet" href="/styles.css?v=20260124-3" />
 
     <!-- Open Graph -->
     <meta property="og:title" content="Best Managed WordPress Hosting for Agencies" />
@@ -26,211 +27,304 @@
     <meta property="og:type" content="article" />
   </head>
 
-  <body>
-    <main class="container">
+  <body class="page-article">
+    <!-- Match site chrome so it inherits the same look -->
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="/">Agency Hosting Guide</a>
 
-      <!-- HERO -->
-      <header class="hero">
-        <h1>Best Managed WordPress Hosting for Agencies Running 10+ Client Sites</h1>
-        <p class="subhead">
-          When you manage 10+ client sites, hosting stops being infrastructure and starts
-          being a business risk. This guide compares managed WordPress hosts built for
-          agencies — not hobby sites.
-        </p>
+        <nav class="nav">
+          <a href="/">Guide</a>
+          <a href="/about.html">About</a>
+          <a href="/disclosure.html">Disclosure</a>
+          <a href="/contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-        <p class="meta">
-          Updated for 2026 · Affiliate disclosure below
-        </p>
-      </header>
+    <main>
+      <div class="container">
+        <!-- HERO (use existing hero layout/classes) -->
+        <section class="hero">
+          <div class="hero-copy">
+            <h1>Best Managed WordPress Hosting for Agencies Running 10+ Client Sites</h1>
 
-      <!-- QUICK TAKE -->
-      <section class="quick-take">
-        <h2>Quick Take</h2>
+            <p class="byline">
+              Updated for 2026 · Built for agencies managing <strong>10+ WordPress sites</strong> ·
+              <a href="#comparison" class="secondary-link">Jump to comparison</a>
+            </p>
 
-        <ul>
-          <li>
-            <strong>Default pick:</strong> Kinsta — the safest balance of performance,
-            predictable pricing, and agency-friendly workflows.
-            <br />
-            <a
-              class="cta-primary"
-              href="https://kinsta.com/?kaid=XRLCUACNIAKC"
-              target="_blank"
-              rel="nofollow sponsored"
-            >View plans</a>
-            <span class="why-line">Why we recommend this: excellent support during client emergencies.</span>
-          </li>
+            <p class="lead">
+              When you manage 10+ client sites, hosting stops being infrastructure and starts being a business risk.
+              This guide compares managed WordPress hosts built for agencies — not hobby sites.
+            </p>
 
-          <li>
-            <strong>Best simple managed option:</strong> Pressable — a clean, WordPress-native
-            setup with fewer moving parts.
-            <br />
-            <a
-              class="cta-primary"
-              href="#pressable"
-            >See pricing</a>
-            <span class="why-line">Why we recommend this: predictable plans for agencies that want simplicity.</span>
-          </li>
+            <div class="qualifier">
+              <strong>Who this is for:</strong> agencies with <strong>10+ active WordPress sites</strong>
+              (client work, retainers, ongoing updates). If you run a single blog or hobby site, most options here will be overkill.
+            </div>
 
-          <li>
-            <strong>Best ecosystem play:</strong> WordPress.com / Automattic — best if you want
-            everything under one roof.
-            <br />
-            <a
-              class="cta-primary"
-              href="#automattic"
-            >Explore options</a>
-            <span class="why-line">Why we recommend this: deep WordPress integration and long-term stability.</span>
-          </li>
-        </ul>
-      </section>
+            <div class="cta-row">
+              <a class="btn primary" href="#comparison">See comparison table</a>
+              <a class="btn" href="#top-pick">Jump to top pick</a>
+            </div>
 
-      <!-- COMPARISON TABLE -->
-      <section class="comparison">
-        <h2>Agency Hosting Comparison</h2>
+            <p class="disclosure-inline">
+              Disclosure: This site uses affiliate links. If you click through and purchase, we may earn a commission at no additional cost to you.
+            </p>
+          </div>
 
-        <table>
-          <thead>
-            <tr>
-              <th>Host</th>
-              <th>Best for</th>
-              <th>Pricing predictability</th>
-              <th>Agency workflows</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Kinsta</td>
-              <td>Most agencies managing 10–50 sites</td>
-              <td>High</td>
-              <td>Staging, backups, isolation</td>
-              <td>
-                <a
-                  class="cta-primary"
-                  href="https://kinsta.com/?kaid=XRLCUACNIAKC"
-                  target="_blank"
-                  rel="nofollow sponsored"
-                >View plans</a>
-              </td>
-            </tr>
-            <tr>
-              <td>Pressable</td>
-              <td>Smaller agencies wanting simplicity</td>
-              <td>High</td>
-              <td>Managed WordPress, fewer knobs</td>
-              <td>
-                <a class="cta-primary" href="#pressable">See pricing</a>
-              </td>
-            </tr>
-            <tr>
-              <td>WordPress.com</td>
-              <td>Agencies all-in on Automattic</td>
-              <td>Medium</td>
-              <td>Integrated ecosystem</td>
-              <td>
-                <a class="cta-primary" href="#automattic">Explore options</a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+          <aside class="hero-box">
+            <h2>Quick take</h2>
+            <ul>
+              <li><strong>Default pick:</strong> Kinsta — best balance of performance, predictable pricing, and agency workflows.</li>
+              <li><strong>Simple managed:</strong> Pressable — clean, WordPress-native setup with fewer moving parts.</li>
+              <li><strong>Ecosystem play:</strong> WordPress.com / Automattic — best if you want everything under one roof.</li>
+            </ul>
+            <p class="note tiny">
+              Focus: workflow fit · predictable scaling · support competence
+            </p>
+          </aside>
+        </section>
 
-      <!-- PROVIDERS -->
-      <section id="kinsta">
-        <h2>Kinsta for Agencies</h2>
-        <p>
-          Kinsta is the default choice for many agencies because it balances performance,
-          isolation, and predictable pricing. It works especially well once you pass
-          10–15 active client sites.
-        </p>
-        <p>
-          Agencies like Kinsta for its support quality and staging workflows. The main
-          downside is cost — but most agencies find the time saved offsets the price.
-        </p>
+        <!-- TOP PICK (use existing pick-card styling) -->
+        <section class="section" id="top-pick">
+          <div class="section-head">
+            <h2>Top pick for most agencies</h2>
+            <p class="sub">If you want the safest “default” for 10–50 client sites, start here.</p>
+          </div>
 
-        <a
-          class="cta-primary"
-          href="https://kinsta.com/?kaid=XRLCUACNIAKC"
-          target="_blank"
-          rel="nofollow sponsored"
-        >View Kinsta plans</a>
-        <p class="why-line">
-          Why we recommend this: reliable performance and support that understands agency urgency.
-        </p>
-      </section>
+          <div class="pick-card">
+            <div class="pick-head">
+              <h3>Kinsta</h3>
+              <a
+                class="btn small"
+                href="https://kinsta.com/?kaid=XRLCUACNIAKC"
+                target="_blank"
+                rel="nofollow sponsored noopener noreferrer"
+              >
+                View plans
+              </a>
+            </div>
 
-      <section id="pressable">
-        <h2>Pressable for Agencies</h2>
-        <p>
-          Pressable is a strong choice for agencies that want managed WordPress without
-          complexity. It’s especially appealing if you prefer fewer configuration options.
-        </p>
-        <p>
-          It may not scale as flexibly as Kinsta for very large portfolios, but for many
-          agencies it’s more than enough.
-        </p>
+            <p class="why-line">
+              Why we recommend this: excellent support during client emergencies, plus clean staging/workflow fit for agencies.
+            </p>
 
-        <a class="cta-primary" href="#">See Pressable pricing</a>
-        <p class="why-line">
-          Why we recommend this: simple plans that reduce operational overhead.
-        </p>
-      </section>
+            <div class="pick-grid">
+              <div>
+                <h4>Best for</h4>
+                <ul>
+                  <li>Agencies managing 10–50 sites</li>
+                  <li>Clients who expect “it just works”</li>
+                  <li>Teams that want less babysitting</li>
+                </ul>
+              </div>
 
-      <section id="automattic">
-        <h2>WordPress.com & Automattic</h2>
-        <p>
-          Automattic’s offerings make sense if you want tight integration with the broader
-          WordPress ecosystem. This is a long-term stability play rather than a performance-first one.
-        </p>
+              <div>
+                <h4>Trade-offs</h4>
+                <ul>
+                  <li>Not the cheapest option</li>
+                  <li>Premium features are priced accordingly</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
 
-        <a class="cta-primary" href="#">Explore WordPress.com options</a>
-        <p class="why-line">
-          Why we recommend this: deep WordPress DNA and ecosystem alignment.
-        </p>
-      </section>
+        <!-- COMPARISON TABLE (use existing table styles) -->
+        <section class="section" id="comparison">
+          <div class="section-head">
+            <h2>Agency hosting comparison</h2>
+            <p class="sub">A quick scan of what matters most when you’re running 10+ client sites.</p>
+          </div>
 
-      <!-- WHO NOT FOR -->
-      <section class="not-for">
-        <h2>Who this is not for</h2>
-        <ul>
-          <li>Single-site bloggers</li>
-          <li>Hobby projects</li>
-          <li>Price-first buyers</li>
-          <li>Agencies unwilling to pay for reliability</li>
-        </ul>
-      </section>
+          <div class="table-wrap">
+            <table class="compare">
+              <thead>
+                <tr>
+                  <th>Host</th>
+                  <th>Best for</th>
+                  <th>Pricing predictability</th>
+                  <th>Agency workflows</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="host">
+                      <div class="host-name">Kinsta</div>
+                      <span class="host-tag">Default pick</span>
+                    </div>
+                  </td>
+                  <td>Most agencies managing 10–50 sites</td>
+                  <td>High</td>
+                  <td>Staging, backups, isolation</td>
+                  <td>
+                    <a
+                      class="btn small"
+                      href="https://kinsta.com/?kaid=XRLCUACNIAKC"
+                      target="_blank"
+                      rel="nofollow sponsored noopener noreferrer"
+                    >
+                      View plans
+                    </a>
+                    <div class="why-line">Why: best “safe default” for agencies.</div>
+                  </td>
+                </tr>
 
-      <!-- FAQ -->
-      <section class="faq">
-        <h2>Frequently Asked Questions</h2>
+                <tr>
+                  <td>
+                    <div class="host">
+                      <div class="host-name">Pressable</div>
+                      <span class="host-tag">Simple managed</span>
+                    </div>
+                  </td>
+                  <td>Smaller agencies wanting simplicity</td>
+                  <td>High</td>
+                  <td>Managed WordPress, fewer knobs</td>
+                  <td>
+                    <a class="btn small" href="#pressable">See pricing</a>
+                    <div class="why-line">Why: predictable plans, low ops overhead.</div>
+                  </td>
+                </tr>
 
-        <h3>Is managed WordPress hosting worth it for agencies?</h3>
-        <p>
-          Yes — once you manage 10+ client sites, the time saved on maintenance, backups,
-          and emergencies usually outweighs the higher monthly cost.
-        </p>
+                <tr>
+                  <td>
+                    <div class="host">
+                      <div class="host-name">WordPress.com</div>
+                      <span class="host-tag">Ecosystem play</span>
+                    </div>
+                  </td>
+                  <td>Agencies all-in on Automattic</td>
+                  <td>Medium</td>
+                  <td>Integrated ecosystem</td>
+                  <td>
+                    <a class="btn small" href="#automattic">Explore options</a>
+                    <div class="why-line">Why: deep WP integration + long-term stability.</div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
 
-        <h3>Why not VPS or shared hosting?</h3>
-        <p>
-          These options often shift operational risk onto the agency. Managed hosting
-          trades cost for predictability.
-        </p>
+        <!-- PROVIDERS (simple editorial sections; still styled) -->
+        <section class="section" id="kinsta">
+          <div class="section-head">
+            <h2>Kinsta for agencies</h2>
+            <p class="sub">Performance + workflow + support are why agencies stick with it.</p>
+          </div>
 
-        <h3>How many sites before managed hosting makes sense?</h3>
-        <p>
-          Most agencies feel the break-even point around 8–12 active client sites.
-        </p>
-      </section>
+          <p>
+            Kinsta is a default choice for many agencies because it balances performance, isolation, and predictable pricing.
+            It works especially well once you pass 10–15 active client sites.
+          </p>
+          <p class="muted">
+            The main downside is cost — but for most agencies the time saved offsets the price.
+          </p>
 
-      <!-- DISCLOSURE -->
-      <footer class="disclosure">
-        <p>
-          Disclosure: This site uses affiliate links. If you click through and purchase,
-          we may earn a commission at no additional cost to you.
-        </p>
-      </footer>
+          <a
+            class="btn primary"
+            href="https://kinsta.com/?kaid=XRLCUACNIAKC"
+            target="_blank"
+            rel="nofollow sponsored noopener noreferrer"
+          >
+            View Kinsta plans
+          </a>
+          <p class="why-line">Why we recommend this: reliable performance + support that understands agency urgency.</p>
+        </section>
 
+        <section class="section" id="pressable">
+          <div class="section-head">
+            <h2>Pressable for agencies</h2>
+            <p class="sub">A clean WordPress-native option when you want fewer moving parts.</p>
+          </div>
+
+          <p>
+            Pressable is a strong choice for agencies that want managed WordPress without complexity.
+            It’s especially appealing if you prefer fewer configuration knobs.
+          </p>
+
+          <a class="btn primary" href="#">
+            See Pressable pricing
+          </a>
+          <p class="why-line">Why we recommend this: simple plans that reduce operational overhead.</p>
+        </section>
+
+        <section class="section" id="automattic">
+          <div class="section-head">
+            <h2>WordPress.com & Automattic</h2>
+            <p class="sub">Best if you want the ecosystem under one roof.</p>
+          </div>
+
+          <p>
+            Automattic’s offerings make sense if you want tight integration with the broader WordPress ecosystem.
+            This is a long-term stability play rather than a pure performance-first decision.
+          </p>
+
+          <a class="btn primary" href="#">
+            Explore WordPress.com options
+          </a>
+          <p class="why-line">Why we recommend this: deep WordPress DNA and ecosystem alignment.</p>
+        </section>
+
+        <section class="section">
+          <div class="section-head">
+            <h2>Who this is not for</h2>
+            <p class="sub">If this is you, you’ll probably overpay.</p>
+          </div>
+
+          <div class="cards">
+            <div class="card">
+              <h3>Single-site bloggers</h3>
+              <ul><li>You don’t need agency workflows.</li></ul>
+            </div>
+            <div class="card">
+              <h3>Hobby projects</h3>
+              <ul><li>Prioritize cost, not ops predictability.</li></ul>
+            </div>
+            <div class="card">
+              <h3>Price-first buyers</h3>
+              <ul><li>Managed hosting trades cost for stability.</li></ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section final">
+          <div class="section-head">
+            <h2>FAQ</h2>
+            <p class="sub">Short answers to the questions agencies actually ask.</p>
+          </div>
+
+          <details class="faq">
+            <summary>Is managed WordPress hosting worth it for agencies?</summary>
+            <p>Yes — once you manage 10+ client sites, time saved on maintenance and emergencies usually outweighs the higher monthly cost.</p>
+          </details>
+
+          <details class="faq">
+            <summary>Why not VPS or shared hosting?</summary>
+            <p>Those often shift operational risk onto the agency. Managed hosting trades cost for predictability and better support.</p>
+          </details>
+
+          <details class="faq">
+            <summary>How many sites before managed hosting makes sense?</summary>
+            <p>Most agencies feel the break-even point around 8–12 active client sites.</p>
+          </details>
+        </section>
+
+        <footer class="site-footer">
+          <div class="container footer-row">
+            <span>© <span id="year"></span> Agency Hosting Guide</span>
+            <span class="tiny muted">Affiliate disclosure applies.</span>
+          </div>
+        </footer>
+      </div>
     </main>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>

@@ -289,6 +289,25 @@ select:focus, input[type="search"]:focus { border-color: rgba(29, 78, 216, 0.5);
   text-decoration: underline;
 }
 
+/* Article page baseline so it doesn't look unstyled */
+.page-article {
+  background: var(--bg, #f7f3ea);
+  color: var(--text, #111827);
+}
+
+.page-article main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 20px;
+}
+
+.page-article h1 { font-size: 44px; line-height: 1.1; margin: 0 0 16px; }
+.page-article h2 { font-size: 28px; margin: 40px 0 12px; }
+.page-article p  { font-size: 18px; line-height: 1.7; margin: 0 0 16px; }
+
+.page-article a { color: #1d4ed8; text-decoration: underline; text-underline-offset: 2px; }
+.page-article a:hover { text-decoration-thickness: 2px; }
+
 /* Why line under CTAs */
 .why-line {
   margin-top: 6px;
