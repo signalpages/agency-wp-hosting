@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Best Managed WordPress Hosting for Agencies (10+ Client Sites)</title>
+    <title>Managed WordPress Hosting for Agencies (10+ Client Sites)</title>
     <meta
       name="description"
-      content="A practical comparison of managed WordPress hosting for agencies running 10+ client sites. Compare Kinsta, Pressable, and WordPress.com based on pricing, support, and agency workflows."
+      content="A practical deep dive into the managed WordPress hosting features agencies actually feel after 10+ client sites: isolation, staging, backups, support, security, and scaling."
     />
 
     <link
@@ -15,20 +15,19 @@
       href="https://agencywphosting.com/best-managed-wordpress-hosting-for-agencies/"
     />
 
-    <!-- cache-bust while iterating; remove or update later -->
-    <link rel="stylesheet" href="/styles.css?v=20260124-3" />
+    <!-- cache-bust while iterating; bump value when you change CSS -->
+    <link rel="stylesheet" href="/styles.css?v=20260124-4" />
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Best Managed WordPress Hosting for Agencies" />
+    <meta property="og:title" content="Managed WordPress Hosting for Agencies" />
     <meta
       property="og:description"
-      content="Managed WordPress hosting comparison for agencies managing 10+ client sites."
+      content="A practical deep dive into the features agencies actually need after 10+ client sites."
     />
     <meta property="og:type" content="article" />
   </head>
 
   <body class="page-article">
-    <!-- Match site chrome so it inherits the same look -->
     <header class="site-header">
       <div class="container header-row">
         <a class="brand" href="/">Agency Hosting Guide</a>
@@ -44,255 +43,389 @@
 
     <main>
       <div class="container">
-        <!-- HERO (use existing hero layout/classes) -->
-        <section class="hero">
+        <!-- HERO -->
+        <section class="hero" aria-labelledby="title">
           <div class="hero-copy">
-            <h1>Best Managed WordPress Hosting for Agencies Running 10+ Client Sites</h1>
+            <h1 id="title">Managed WordPress Hosting for Agencies (10+ Client Sites)</h1>
 
             <p class="byline">
-              Updated for 2026 · Built for agencies managing <strong>10+ WordPress sites</strong> ·
-              <a href="#comparison" class="secondary-link">Jump to comparison</a>
+              Created for agencies managing <strong>10+ WordPress sites</strong> ·
+              <a class="secondary-link" href="#features">Jump to key features</a>
             </p>
 
             <p class="lead">
-              When you manage 10+ client sites, hosting stops being infrastructure and starts being a business risk.
-              This guide compares managed WordPress hosts built for agencies — not hobby sites.
+              Once you're running 10+ client sites, hosting stops being “infrastructure” and starts being a
+              business risk. This page is the deep dive, providing insight into what the important features actually do, why agencies
+              feel the difference, and how the major platforms compare in day-to-day operations.
             </p>
 
             <div class="qualifier">
-              <strong>Who this is for:</strong> agencies with <strong>10+ active WordPress sites</strong>
-              (client work, retainers, ongoing updates). If you run a single blog or hobby site, most options here will be overkill.
+              <strong>Short version:</strong> this isn't a ranking page. If you want the quick “pick a host” view,
+              use the comparison overview. This page is for understanding what you're paying for (and what you aren't).
             </div>
 
             <div class="cta-row">
-              <a class="btn primary" href="#comparison">See comparison table</a>
-              <a class="btn" href="#top-pick">Jump to top pick</a>
+              <a class="btn primary" href="/">See the comparison overview</a>
+              <a class="btn" href="#operator">Operator perspective</a>
             </div>
 
             <p class="disclosure-inline">
-              Disclosure: This site uses affiliate links. If you click through and purchase, we may earn a commission at no additional cost to you.
+              Disclosure: This site uses affiliate links. If you click and purchase, we may earn a commission at no extra cost to you.
             </p>
           </div>
 
-          <aside class="hero-box">
-            <h2>Quick take</h2>
+          <aside class="hero-box" aria-label="What you’ll learn">
+            <h2>What this deep dive covers</h2>
             <ul>
-              <li><strong>Default pick:</strong> Kinsta — best balance of performance, predictable pricing, and agency workflows.</li>
-              <li><strong>Simple managed:</strong> Pressable — clean, WordPress-native setup with fewer moving parts.</li>
-              <li><strong>Ecosystem play:</strong> WordPress.com / Automattic — best if you want everything under one roof.</li>
+              <li><strong>Isolation:</strong> keeping one bad site from taking others down</li>
+              <li><strong>Staging + rollbacks:</strong> fixing client emergencies fast</li>
+              <li><strong>Scaling:</strong> growing without pricing chaos</li>
+              <li><strong>Support:</strong> the difference you feel when things break</li>
+              <li><strong>Security:</strong> what’s handled for you vs what you still own</li>
             </ul>
             <p class="note tiny">
-              Focus: workflow fit · predictable scaling · support competence
+              If you're running a single site most of this will feel like overkill, and that's okay.
             </p>
           </aside>
         </section>
 
-        <!-- TOP PICK (use existing pick-card styling) -->
-        <section class="section" id="top-pick">
+        <!-- WHY IT MATTERS -->
+        <section class="section" id="why">
           <div class="section-head">
-            <h2>Top pick for most agencies</h2>
-            <p class="sub">If you want the safest “default” for 10–50 client sites, start here.</p>
+            <h2>Why “managed hosting” becomes unavoidable after 10+ sites</h2>
+            <p class="sub">
+              The pain shows up as interrupted work, client pings, and asks "why is this down again?"
+            </p>
           </div>
 
-          <div class="pick-card">
-            <div class="pick-head">
-              <h3>Kinsta</h3>
-              <a
-                class="btn small"
-                href="https://kinsta.com/?kaid=XRLCUACNIAKC"
-                target="_blank"
-                rel="nofollow sponsored noopener noreferrer"
-              >
-                View plans
-              </a>
-            </div>
+          <div class="cards">
+            <article class="card">
+              <h3>Firefighting becomes the default</h3>
+              <ul>
+                <li>Updates are inconsistent</li>
+                <li>Backups exist… until they don't</li>
+                <li>One client emergency steals an entire day</li>
+              </ul>
+            </article>
 
-            <p class="why-line">
-              Why we recommend this: excellent support during client emergencies, plus clean staging/workflow fit for agencies.
+            <article class="card">
+              <h3>Risk multiplies quietly</h3>
+              <ul>
+                <li>One compromised site can impact others</li>
+                <li>Performance issues become contagious</li>
+                <li>Support is often “good luck, figure it out”</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>Predictability becomes valuable</h3>
+              <ul>
+                <li>Cleaner retainers</li>
+                <li>Fewer surprise invoices</li>
+                <li>Less time explaining chaos to clients</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="callout" style="margin-top: 12px;">
+            Managed hosting doesn't remove work, it changes where the work happens.
+            If the platform absorbs operational risk, your agency gets calmer.
+          </div>
+        </section>
+
+        <!-- FEATURES -->
+        <section class="section" id="features">
+          <div class="section-head">
+            <h2>The agency features that actually matter</h2>
+            <p class="sub">
+              Ignore marketing. These are the knobs that change your operating day.
+            </p>
+          </div>
+
+          <article class="pick-card" id="isolation">
+            <div class="pick-head">
+              <h3>1) Site isolation & blast radius</h3>
+              <a class="btn small" href="/" title="See the overview table">See overview</a>
+            </div>
+            <p class="muted">
+              Agencies don't lose sleep over “security features.” They lose sleep over one client site taking down
+              three others. Isolation is about containment: keeping failure local.
             </p>
 
             <div class="pick-grid">
               <div>
-                <h4>Best for</h4>
+                <h4>What to look for</h4>
                 <ul>
-                  <li>Agencies managing 10–50 sites</li>
-                  <li>Clients who expect “it just works”</li>
-                  <li>Teams that want less babysitting</li>
+                  <li>Per-site isolation (containers / strong account separation)</li>
+                  <li>Clear boundaries: CPU, memory, PHP workers</li>
+                  <li>Easy malware cleanup and restore pathways</li>
                 </ul>
               </div>
-
               <div>
-                <h4>Trade-offs</h4>
+                <h4>Why agencies feel it</h4>
                 <ul>
-                  <li>Not the cheapest option</li>
-                  <li>Premium features are priced accordingly</li>
+                  <li>One hack doesn't become five angry clients</li>
+                  <li>Client A's traffic spike doesn't crater Client B</li>
+                  <li>Fewer “mystery outages” caused by neighbors</li>
                 </ul>
               </div>
             </div>
-          </div>
+          </article>
+
+          <article class="pick-card" style="margin-top: 12px;" id="staging">
+            <div class="pick-head">
+              <h3>2) Staging, backups, and rollbacks</h3>
+              <a class="btn small" href="#faq">FAQ</a>
+            </div>
+            <p class="muted">
+              At scale, the real win isn't “one-click staging.” It's confidence. When something breaks,
+              you want to decide fast: rollback or fix forward.
+            </p>
+
+            <div class="two-col">
+              <div class="card">
+                <h3>Staging that's actually usable</h3>
+                <ul>
+                  <li>Staging mirrors production closely</li>
+                  <li>Push/pull flows that don't feel dangerous</li>
+                  <li>Easy to hand to a developer without drama</li>
+                </ul>
+              </div>
+              <div class="card">
+                <h3>Backups you trust</h3>
+                <ul>
+                  <li>Automatic backups (minimum daily)</li>
+                  <li>One-click restores that work under pressure</li>
+                  <li>Clear retention + restore points</li>
+                </ul>
+              </div>
+            </div>
+
+            <p class="why-line">
+              Why it matters: rollback speed is often the difference between “minor hiccup” and “client escalation.”
+            </p>
+          </article>
+
+          <article class="pick-card" style="margin-top: 12px;" id="access">
+            <div class="pick-head">
+              <h3>3) User access, permissions, and client boundaries</h3>
+              <a class="btn small" href="/">Overview</a>
+            </div>
+            <p class="muted">
+              Agencies scale people, not just sites. A good platform makes it easy to grant access without giving clients
+              the keys to the kingdom while providing the ability to  cleanly offboard when a relationship ends.
+            </p>
+
+            <div class="pick-grid">
+              <div>
+                <h4>What to look for</h4>
+                <ul>
+                  <li>Role-based access controls (or something close)</li>
+                  <li>Per-site user management and auditability</li>
+                  <li>Clean exports / migrations</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Agency reality</h4>
+                <ul>
+                  <li>You need boundaries to stay professional</li>
+                  <li>You need offboarding to be painless</li>
+                  <li>You need dev access that doesn't become a security risk</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="pick-card" style="margin-top: 12px;" id="scaling">
+            <div class="pick-head">
+              <h3>4) Scaling from 10 → 25 → 50+ without pricing chaos</h3>
+              <a class="btn small" href="/">Compare</a>
+            </div>
+            <p class="muted">
+              Most agencies don't mind paying for quality. What they hate is surprise. “Unlimited” is often just a vague
+              promise that collapses the moment you have real traffic and real clients.
+            </p>
+
+            <div class="two-col">
+              <div class="card">
+                <h3>Predictable models</h3>
+                <ul>
+                  <li>Clear plan tiers</li>
+                  <li>Transparent overages (if any)</li>
+                  <li>Capacity you can plan around</li>
+                </ul>
+              </div>
+              <div class="card">
+                <h3>Red flags</h3>
+                <ul>
+                  <li>Throttling without clear metrics</li>
+                  <li>“Unlimited” with undefined limits</li>
+                  <li>Overages that surprise you at month-end</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="pick-card" style="margin-top: 12px;" id="support">
+            <div class="pick-head">
+              <h3>5) Support quality (the difference you feel under pressure)</h3>
+              <a class="btn small" href="#operator">Operator view</a>
+            </div>
+            <p class="muted">
+              Agencies pay for managed hosting because support is part of the product. The difference isn't “nice chat.”
+              It's competence, speed, and knowing what matters when a client is waiting.
+            </p>
+
+            <div class="pick-grid">
+              <div>
+                <h4>Support that helps agencies</h4>
+                <ul>
+                  <li>Fast, competent triage</li>
+                  <li>Clear explanations you can reuse with clients</li>
+                  <li>People who understand WordPress at scale</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Support that wastes time</h4>
+                <ul>
+                  <li>Copy-paste scripts</li>
+                  <li>Slow escalation loops</li>
+                  <li>“It's your plugin” without proof or guidance</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="pick-card" style="margin-top: 12px;" id="security">
+            <div class="pick-head">
+              <h3>6) Security, updates, and liability</h3>
+              <a class="btn small" href="/">Overview</a>
+            </div>
+            <p class="muted">
+              The big question isn't “is this secure?” It's “when something breaks, who owns the problem?”
+              Managed hosting varies a lot in what it automates and what it expects the agency to handle.
+            </p>
+
+            <div class="pick-grid">
+              <div>
+                <h4>Where managed hosting helps</h4>
+                <ul>
+                  <li>Platform hardening and WAF-style protections</li>
+                  <li>Backups and restore tooling</li>
+                  <li>Monitoring and incident pathways</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Where agencies still own it</h4>
+                <ul>
+                  <li>Plugin quality and vulnerability choices</li>
+                  <li>Client content/editor behavior</li>
+                  <li>Deciding what gets auto-updated (and what doesn't)</li>
+                </ul>
+              </div>
+            </div>
+          </article>
         </section>
 
-        <!-- COMPARISON TABLE (use existing table styles) -->
-        <section class="section" id="comparison">
+        <!-- OPERATOR PERSPECTIVE -->
+        <section class="section" id="operator">
           <div class="section-head">
-            <h2>Agency hosting comparison</h2>
-            <p class="sub">A quick scan of what matters most when you’re running 10+ client sites.</p>
-          </div>
-
-          <div class="table-wrap">
-            <table class="compare">
-              <thead>
-                <tr>
-                  <th>Host</th>
-                  <th>Best for</th>
-                  <th>Pricing predictability</th>
-                  <th>Agency workflows</th>
-                  <th>Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <div class="host">
-                      <div class="host-name">Kinsta</div>
-                      <span class="host-tag">Default pick</span>
-                    </div>
-                  </td>
-                  <td>Most agencies managing 10–50 sites</td>
-                  <td>High</td>
-                  <td>Staging, backups, isolation</td>
-                  <td>
-                    <a
-                      class="btn small"
-                      href="https://kinsta.com/?kaid=XRLCUACNIAKC"
-                      target="_blank"
-                      rel="nofollow sponsored noopener noreferrer"
-                    >
-                      View plans
-                    </a>
-                    <div class="why-line">Why: best “safe default” for agencies.</div>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <div class="host">
-                      <div class="host-name">Pressable</div>
-                      <span class="host-tag">Simple managed</span>
-                    </div>
-                  </td>
-                  <td>Smaller agencies wanting simplicity</td>
-                  <td>High</td>
-                  <td>Managed WordPress, fewer knobs</td>
-                  <td>
-                    <a class="btn small" href="#pressable">See pricing</a>
-                    <div class="why-line">Why: predictable plans, low ops overhead.</div>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <div class="host">
-                      <div class="host-name">WordPress.com</div>
-                      <span class="host-tag">Ecosystem play</span>
-                    </div>
-                  </td>
-                  <td>Agencies all-in on Automattic</td>
-                  <td>Medium</td>
-                  <td>Integrated ecosystem</td>
-                  <td>
-                    <a class="btn small" href="#automattic">Explore options</a>
-                    <div class="why-line">Why: deep WP integration + long-term stability.</div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-        <!-- PROVIDERS (simple editorial sections; still styled) -->
-        <section class="section" id="kinsta">
-          <div class="section-head">
-            <h2>Kinsta for agencies</h2>
-            <p class="sub">Performance + workflow + support are why agencies stick with it.</p>
-          </div>
-
-          <p>
-            Kinsta is a default choice for many agencies because it balances performance, isolation, and predictable pricing.
-            It works especially well once you pass 10–15 active client sites.
-          </p>
-          <p class="muted">
-            The main downside is cost — but for most agencies the time saved offsets the price.
-          </p>
-
-          <a
-            class="btn primary"
-            href="https://kinsta.com/?kaid=XRLCUACNIAKC"
-            target="_blank"
-            rel="nofollow sponsored noopener noreferrer"
-          >
-            View Kinsta plans
-          </a>
-          <p class="why-line">Why we recommend this: reliable performance + support that understands agency urgency.</p>
-        </section>
-
-        <section class="section" id="pressable">
-          <div class="section-head">
-            <h2>Pressable for agencies</h2>
-            <p class="sub">A clean WordPress-native option when you want fewer moving parts.</p>
-          </div>
-
-          <p>
-            Pressable is a strong choice for agencies that want managed WordPress without complexity.
-            It’s especially appealing if you prefer fewer configuration knobs.
-          </p>
-
-          <a class="btn primary" href="#">
-            See Pressable pricing
-          </a>
-          <p class="why-line">Why we recommend this: simple plans that reduce operational overhead.</p>
-        </section>
-
-        <section class="section" id="automattic">
-          <div class="section-head">
-            <h2>WordPress.com & Automattic</h2>
-            <p class="sub">Best if you want the ecosystem under one roof.</p>
-          </div>
-
-          <p>
-            Automattic’s offerings make sense if you want tight integration with the broader WordPress ecosystem.
-            This is a long-term stability play rather than a pure performance-first decision.
-          </p>
-
-          <a class="btn primary" href="#">
-            Explore WordPress.com options
-          </a>
-          <p class="why-line">Why we recommend this: deep WordPress DNA and ecosystem alignment.</p>
-        </section>
-
-        <section class="section">
-          <div class="section-head">
-            <h2>Who this is not for</h2>
-            <p class="sub">If this is you, you’ll probably overpay.</p>
+            <h2>Operator perspective: how the major platforms feel day-to-day</h2>
+            <p class="sub">This isn't a ranking, just practical insight on what it's like to operate each platform day to day.</p>
           </div>
 
           <div class="cards">
-            <div class="card">
-              <h3>Single-site bloggers</h3>
-              <ul><li>You don’t need agency workflows.</li></ul>
-            </div>
-            <div class="card">
-              <h3>Hobby projects</h3>
-              <ul><li>Prioritize cost, not ops predictability.</li></ul>
-            </div>
-            <div class="card">
-              <h3>Price-first buyers</h3>
-              <ul><li>Managed hosting trades cost for stability.</li></ul>
-            </div>
+            <article class="card">
+              <h3>Kinsta</h3>
+              <p class="muted">
+                Infrastructure-first. Agencies tend to feel calmer because isolation and tooling reduce “random” problems.
+              </p>
+              <ul>
+                <li><strong>Strengths:</strong> isolation, workflow tooling, support depth</li>
+                <li><strong>Tradeoffs:</strong> premium pricing, opinionated approach</li>
+              </ul>
+              <div class="cta-row">
+                <a
+                  class="btn primary"
+                  href="https://kinsta.com/?kaid=XRLCUACNIAKC"
+                  target="_blank"
+                  rel="nofollow sponsored noopener noreferrer"
+                >
+                  View Kinsta plans
+                </a>
+                <a class="btn" href="/">Compare on overview</a>
+              </div>
+              <p class="why-line">Why agencies pick it: fewer “unknown unknowns” during client emergencies.</p>
+            </article>
+
+            <article class="card">
+              <h3>Pressable</h3>
+              <p class="muted">
+                WordPress-native simplicity. Great when you want fewer moving parts and a cleaner operational loop.
+              </p>
+              <ul>
+                <li><strong>Strengths:</strong> simple experience, WordPress-aligned workflows</li>
+                <li><strong>Tradeoffs:</strong> less flexible at larger scale</li>
+              </ul>
+              <div class="cta-row">
+                <a class="btn primary" href="#features">See feature checklist</a>
+                <a class="btn" href="/">Compare on overview</a>
+              </div>
+              <p class="why-line">Why agencies pick it: lower operational overhead when you want “simple and stable.”</p>
+            </article>
+
+            <article class="card">
+              <h3>WordPress.com / Automattic</h3>
+              <p class="muted">
+                Ecosystem play. Strong alignment with WordPress long-term, but the feel can be more “platform” than “agency control.”
+              </p>
+              <ul>
+                <li><strong>Strengths:</strong> deep WordPress integration, longevity</li>
+                <li><strong>Tradeoffs:</strong> less granular control in some workflows</li>
+              </ul>
+              <div class="cta-row">
+                <a class="btn primary" href="#security">Read security/liability notes</a>
+                <a class="btn" href="/">Compare on overview</a>
+              </div>
+              <p class="why-line">Why agencies pick it: they want the ecosystem under one roof.</p>
+            </article>
           </div>
         </section>
 
-        <section class="section final">
+        <!-- COMMON MISTAKES -->
+        <section class="section" id="mistakes">
+          <div class="section-head">
+            <h2>Common agency mistakes when choosing hosting</h2>
+            <p class="sub">These don't fail immediately. They compound until they explode.</p>
+          </div>
+
+          <div class="two-col">
+            <div class="card">
+              <h3>Over-optimizing for price</h3>
+              <ul>
+                <li>Cheap plans create expensive work</li>
+                <li>“Unlimited” becomes unpredictable</li>
+                <li>You end up paying in client trust</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3>Choosing for today, not next year</h3>
+              <ul>
+                <li>Scaling breaks the plan model</li>
+                <li>Migrations happen at the worst time</li>
+                <li>Margins get squeezed quietly</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="callout" style="margin-top: 12px;">
+            <strong>Rule of thumb:</strong> if you're going to run 25+ client sites, choose a platform you can still tolerate at 50.
+          </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section final" id="faq">
           <div class="section-head">
             <h2>FAQ</h2>
             <p class="sub">Short answers to the questions agencies actually ask.</p>
@@ -300,18 +433,30 @@
 
           <details class="faq">
             <summary>Is managed WordPress hosting worth it for agencies?</summary>
-            <p>Yes — once you manage 10+ client sites, time saved on maintenance and emergencies usually outweighs the higher monthly cost.</p>
+            <p>
+              Once you're managing 10+ sites, switching to managed hosting reduces downtime risk and operational overhead.
+              The cost is often less than the value of the time you stop wasting.
+            </p>
           </details>
 
           <details class="faq">
-            <summary>Why not VPS or shared hosting?</summary>
-            <p>Those often shift operational risk onto the agency. Managed hosting trades cost for predictability and better support.</p>
+            <summary>What's the single most important feature?</summary>
+            <p>
+              Isolation and rollback speed. Those two determine whether problems stay contained and whether emergencies stay small.
+            </p>
           </details>
 
           <details class="faq">
-            <summary>How many sites before managed hosting makes sense?</summary>
-            <p>Most agencies feel the break-even point around 8–12 active client sites.</p>
+            <summary>How should agencies think about pricing?</summary>
+            <p>
+              Don't chase “cheap.” Chase predictability. If your invoice swings month-to-month, your retainers and margins will too.
+            </p>
           </details>
+
+          <div class="cta-row" style="margin-top: 12px;">
+            <a class="btn primary" href="/">Back to comparison overview</a>
+            <a class="btn" href="#title">Back to top</a>
+          </div>
         </section>
 
         <footer class="site-footer">
@@ -324,7 +469,17 @@
     </main>
 
     <script>
+      // footer year
       document.getElementById("year").textContent = new Date().getFullYear();
+
+      // “Updated” date (simple, honest: uses build day when you edit)
+      const t = document.getElementById("updatedTime");
+      if (t) {
+        const d = new Date();
+        const iso = d.toISOString().slice(0, 10);
+        t.setAttribute("datetime", iso);
+        t.textContent = d.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
+      }
     </script>
   </body>
 </html>
