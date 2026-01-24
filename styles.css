@@ -96,6 +96,7 @@ code {
 
 .section { padding: 22px 0; }
 .section-head { margin-bottom: 12px; }
+.section-head h1,
 .section-head h2 { margin: 0 0 6px; font-size: 1.45rem; }
 .sub { color: var(--muted); margin: 0; }
 
@@ -348,7 +349,8 @@ select:focus, input[type="search"]:focus { border-color: rgba(29, 78, 216, 0.5);
 }
 
 .field input,
-.field textarea {
+.field textarea,
+.field select {
   width: 100%;
   padding: 12px 12px;
   border-radius: 14px;

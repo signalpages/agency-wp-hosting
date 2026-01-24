@@ -1,152 +1,207 @@
-<section class="section">
-  <div class="section-head">
-    <h1>Work with us</h1>
-    <p class="sub">
-      Need help with hosting, migrations, performance, or managing a portfolio of client sites?
-      Send the basics and I’ll reply with next steps.
-    </p>
-  </div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Success state (shows after redirect ?sent=1) -->
-  <div class="notice success" id="formSuccess" hidden>
-    Got it — message received. I’ll reply soon with next steps and any questions.
-  </div>
+    <title>Work with us | Agency Hosting Guide</title>
+    <meta
+      name="description"
+      content="Need help with WordPress hosting, migrations, performance, or managing 10+ client sites? Send the basics and we’ll reply with next steps."
+    />
 
-  <div class="form-card">
-    <form
-      class="contact-form"
-      action="https://usebasin.com/f/8bfaa3c35805"
-      method="POST"
-      novalidate
-    >
-      <!-- Redirect after submit -->
-      <input type="hidden" name="_redirect" value="https://agencywphosting.com/contact.html?sent=1" />
+    <link rel="canonical" href="https://agencywphosting.com/contact.html" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-      <!-- Honeypot (spam trap) -->
-      <div class="hp" aria-hidden="true">
-        <label for="company_hp">Company</label>
-        <input id="company_hp" name="company_hp" tabindex="-1" autocomplete="off" />
+  <body>
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="index.html">Agency Hosting Guide</a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html">Guide</a>
+          <a href="about.html">About</a>
+          <a href="disclosure.html">Disclosure</a>
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
       </div>
+    </header>
 
-      <div class="form-grid">
-        <div class="field">
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required />
+    <main class="container">
+      <section class="section">
+        <div class="section-head">
+          <h1>Work with us</h1>
+          <p class="sub">
+            Need help with hosting, migrations, performance, or managing a portfolio of client sites?
+            Send the basics and We'll reply with next steps.
+          </p>
         </div>
 
-        <div class="field">
-          <label for="email">Email</label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            placeholder="you@agency.com"
-            autocomplete="email"
-            required
-          />
-        </div>
-      </div>
-
-      <div class="form-grid">
-        <div class="field">
-          <label for="company">Company</label>
-          <input id="company" name="company" type="text" placeholder="Agency / business name" autocomplete="organization" />
+        <!-- Success state (shows after redirect ?sent=1) -->
+        <div class="notice success" id="formSuccess" hidden>
+          Got it — message received. 
         </div>
 
-        <div class="field">
-          <label for="website">Website</label>
-          <input id="website" name="website" type="url" placeholder="https://…" autocomplete="url" />
-          <p class="help">If it’s a migration, include the current host if you know it.</p>
+        <div class="form-card">
+          <form
+            class="contact-form"
+            action="https://usebasin.com/f/8bfaa3c35805"
+            method="POST"
+            novalidate
+          >
+            <!-- Redirect after submit -->
+            <input type="hidden" name="_redirect" value="https://agencywphosting.com/contact.html?sent=1" />
+
+            <!-- Honeypot (spam trap) -->
+            <div class="hp" aria-hidden="true">
+              <label for="company_hp">Company</label>
+              <input id="company_hp" name="company_hp" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">Name</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="Your name"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+
+              <div class="field">
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="you@agency.com"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-grid">
+              <div class="field">
+                <label for="company">Company</label>
+                <input
+                  id="company"
+                  name="company"
+                  type="text"
+                  placeholder="Agency / business name"
+                  autocomplete="organization"
+                />
+              </div>
+
+              <div class="field">
+                <label for="website">Website</label>
+                <input id="website" name="website" type="url" placeholder="https://…" autocomplete="url" />
+                <p class="help">If it’s a migration, include the current host if you know it.</p>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="projectType">What do you need?</label>
+              <select id="projectType" name="project_type" required>
+                <option value="" selected disabled>Select one</option>
+                <option>Managed hosting recommendation</option>
+                <option>Site migration (host → host)</option>
+                <option>Performance / Core Web Vitals</option>
+                <option>Agency portfolio setup (10+ sites)</option>
+                <option>Ongoing maintenance & updates</option>
+                <option>Something else</option>
+              </select>
+            </div>
+
+            <div class="form-grid">
+              <div class="field">
+                <label for="siteCount">How many sites?</label>
+                <select id="siteCount" name="site_count" required>
+                  <option value="" selected disabled>Select</option>
+                  <option>1–3</option>
+                  <option>4–9</option>
+                  <option>10–25</option>
+                  <option>26–50</option>
+                  <option>50+</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="timeline">Timeline</label>
+                <select id="timeline" name="timeline" required>
+                  <option value="" selected disabled>Select</option>
+                  <option>This week</option>
+                  <option>2–4 weeks</option>
+                  <option>1–2 months</option>
+                  <option>Flexible</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="budget">Budget range</label>
+              <select id="budget" name="budget_range" required>
+                <option value="" selected disabled>Select</option>
+                <option>&lt; $500</option>
+                <option>$500–$1,500</option>
+                <option>$1,500–$5,000</option>
+                <option>$5,000+</option>
+                <option>Not sure yet</option>
+              </select>
+              <p class="help">This helps me reply with the right approach (and not waste your time).</p>
+            </div>
+
+            <div class="field">
+              <label for="message">Details</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="What's the goal? Anything broken today? Any must-haves (staging, client handoff, billing, etc.)?"
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn primary" type="submit" id="sendBtn">Send inquiry</button>
+              <p class="privacy">Real human replies. No newsletter. No spam.</p>
+            </div>
+          </form>
         </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <span class="tiny">© <span id="year"></span> Agency Hosting Guide</span>
+        <span class="tiny muted">Built for agencies running 10+ client sites.</span>
       </div>
+    </footer>
 
-      <div class="field">
-        <label for="projectType">What do you need?</label>
-        <select id="projectType" name="project_type" required>
-          <option value="" selected disabled>Select one</option>
-          <option>Managed hosting recommendation</option>
-          <option>Site migration (host → host)</option>
-          <option>Performance / Core Web Vitals</option>
-          <option>Agency portfolio setup (10+ sites)</option>
-          <option>Ongoing maintenance & updates</option>
-          <option>Something else</option>
-        </select>
-      </div>
+    <script>
+      // footer year
+      document.getElementById("year").textContent = new Date().getFullYear();
 
-      <div class="form-grid">
-        <div class="field">
-          <label for="siteCount">How many sites?</label>
-          <select id="siteCount" name="site_count" required>
-            <option value="" selected disabled>Select</option>
-            <option>1–3</option>
-            <option>4–9</option>
-            <option>10–25</option>
-            <option>26–50</option>
-            <option>50+</option>
-          </select>
-        </div>
+      // Show success banner after redirect
+      const qs = new URLSearchParams(window.location.search);
+      if (qs.has("sent")) {
+        const el = document.getElementById("formSuccess");
+        if (el) el.hidden = false;
+      }
 
-        <div class="field">
-          <label for="timeline">Timeline</label>
-          <select id="timeline" name="timeline" required>
-            <option value="" selected disabled>Select</option>
-            <option>This week</option>
-            <option>2–4 weeks</option>
-            <option>1–2 months</option>
-            <option>Flexible</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="field">
-        <label for="budget">Budget range</label>
-        <select id="budget" name="budget_range" required>
-          <option value="" selected disabled>Select</option>
-          <option>&lt; $500</option>
-          <option>$500–$1,500</option>
-          <option>$1,500–$5,000</option>
-          <option>$5,000+</option>
-          <option>Not sure yet</option>
-        </select>
-        <p class="help">This helps me reply with the right approach (and not waste your time).</p>
-      </div>
-
-      <div class="field">
-        <label for="message">Details</label>
-        <textarea
-          id="message"
-          name="message"
-          rows="6"
-          placeholder="What’s the goal? Anything broken today? Any must-haves (staging, client handoff, billing, etc.)?"
-          required
-        ></textarea>
-      </div>
-
-      <div class="form-actions">
-        <button class="btn primary" type="submit" id="sendBtn">Send inquiry</button>
-        <p class="privacy">
-          Real human replies. No newsletter. No spam.
-        </p>
-      </div>
-    </form>
-  </div>
-</section>
-
-<script>
-  // Show success banner after redirect
-  const qs = new URLSearchParams(window.location.search);
-  if (qs.has("sent")) {
-    const el = document.getElementById("formSuccess");
-    if (el) el.hidden = false;
-  }
-
-  // Tiny “sending…” UX
-  const form = document.querySelector(".contact-form");
-  const btn = document.getElementById("sendBtn");
-  if (form && btn) {
-    form.addEventListener("submit", () => {
-      btn.disabled = true;
-      btn.textContent = "Sending…";
-    });
-  }
-</script>
+      // Tiny “sending…” UX
+      const form = document.querySelector(".contact-form");
+      const btn = document.getElementById("sendBtn");
+      if (form && btn) {
+        form.addEventListener("submit", () => {
+          btn.disabled = true;
+          btn.textContent = "Sending…";
+        });
+      }
+    </script>
+  </body>
+</html>
