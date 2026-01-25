@@ -363,4 +363,104 @@
       <section class="section">
         <div class="section-head">
           <h2>Cost Reality Check</h2>
-          <p class="sub">Managed hosting is expensive compared
+          <p class="sub">Managed hosting is expensive compared to shared hosting — because it replaces labor and reduces risk.</p>
+        </div>
+
+        <div class="callout">
+          <p>
+            If one preventable outage costs you <strong>one retainer month</strong>, you’ve already paid for a year of better hosting.
+            Agencies don’t buy “cheap.” They buy <strong>less operational drag</strong>.
+          </p>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section" id="faq">
+        <div class="section-head">
+          <h2>FAQs</h2>
+        </div>
+
+        <details class="faq">
+          <summary>Is managed WordPress hosting worth it for agencies?</summary>
+          <p>
+            Often, yes—once you’re managing 10+ client sites. The win is fewer fires: better support, reliable backups, staging workflows,
+            and less time spent debugging hosting issues.
+          </p>
+        </details>
+
+        <details class="faq">
+          <summary>Should agencies use WordPress multisite?</summary>
+          <p>
+            Sometimes, but it adds operational complexity. Many agencies prefer isolated sites for client separation and easier migrations.
+            If you do use multisite, pick a host that supports your workflow and scaling constraints.
+          </p>
+        </details>
+
+        <details class="faq">
+          <summary>How should agencies bill clients for hosting?</summary>
+          <p>
+            Most agencies either bundle hosting into retainers or pass through a predictable line item. Choose hosts with clear plan tiers
+            and understandable scaling so you can price confidently.
+          </p>
+        </details>
+
+        <details class="faq">
+          <summary>What matters most at 10+ sites?</summary>
+          <p>
+            Support competence, predictable scaling, and workflows (staging/backups/migrations). Raw “speed claims” matter less than
+            reliability and fewer late-night emergencies.
+          </p>
+        </details>
+      </section>
+
+      <!-- FINAL RECO -->
+      <section class="section final">
+        <h2>Final Recommendation</h2>
+        <p>
+          If you manage <strong>10+ client sites</strong>, start with the <strong>Top Pick</strong> and move on.
+          If you’re margin-first, choose the <strong>Best Value</strong>. If you’re dev-heavy and want platform tooling, choose the <strong>Power Pick</strong>.
+        </p>
+        <div class="cta-row">
+          <a class="btn primary" href="#top-pick">Jump to top pick</a>
+          <a class="btn" href="#comparison">Back to table</a>
+        </div>
+        <p class="micro muted">
+          Last updated: <span id="lastUpdated">—</span>
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <div class="footer-left">
+          <strong>Agency Hosting Guide</strong>
+          <span class="dot">•</span>
+          <a href="disclosure.html">Affiliate disclosure</a>
+          <span class="dot">•</span>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-right muted">© <span id="year"></span></div>
+      </div>
+    </footer>
+
+    <!-- Keep your existing JS, but also set the <time> element -->
+    <script src="script.js"></script>
+    <script>
+      // If script.js already sets #year and #lastUpdated, this is harmless.
+      // It also updates the publisher-style <time> element we added.
+      (function () {
+        const d = new Date();
+        const iso = d.toISOString().slice(0, 10);
+
+        const lu = document.getElementById("lastUpdated");
+        if (lu && (lu.textContent || "").trim() === "—") lu.textContent = iso;
+
+        const t = document.getElementById("updatedTime");
+        if (t) {
+          t.textContent = iso;
+          t.setAttribute("datetime", iso);
+        }
+      })();
+    </script>
+  </body>
+</html>
