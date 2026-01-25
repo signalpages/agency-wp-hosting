@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://agencywphosting.com/</loc></url>
-  <url><loc>https://agencywphosting.com/about.html</loc></url>
-  <url><loc>https://agencywphosting.com/disclosure.html</loc></url>
-  <url><loc>https://agencywphosting.com/contact.html</loc></url>
+
+  <url>
+    <loc>https://agencywphosting.com/</loc>
+  </url>
+
+  <url>
+    <loc>https://agencywphosting.com/insights.html</loc>
+  </url>
+
+  <url>
+    <loc>https://agencywphosting.com/insights/why-most-wordpress-sites-eventually-break.html</loc>
+  </url>
+
+  <url>
+    <loc>https://agencywphosting.com/insights/managed-wordpress-hosting-vs-diy.html</loc>
+  </url>
+
+  <url>
+    <loc>https://agencywphosting.com/insights/performance-is-a-maintenance-outcome.html</loc>
+  </url>
+
+  <url>
+    <loc>https://agencywphosting.com/insights/who-this-setup-is-for.html</loc>
+  </url>
+
 </urlset>
