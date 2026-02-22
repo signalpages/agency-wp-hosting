@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Homepage -->
   <url>
     <loc>https://agencywphosting.com/</loc>
+    <priority>1.0</priority>
   </url>
 
+  <!-- Insights Hub -->
   <url>
     <loc>https://agencywphosting.com/insights.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Best Hosting Pillar -->
+  <url>
+    <loc>https://agencywphosting.com/best-managed-wordpress-hosting-for-agencies.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Insight Articles -->
+  <url>
+    <loc>https://agencywphosting.com/insights/how-agencies-price-hosting-retainers.html</loc>
   </url>
 
   <url>
-    <loc>https://agencywphosting.com/insights/why-most-wordpress-sites-eventually-break.html</loc>
+    <loc>https://agencywphosting.com/insights/managed-hosting-roi-for-agencies.html</loc>
   </url>
 
   <url>
@@ -23,6 +38,10 @@
 
   <url>
     <loc>https://agencywphosting.com/insights/who-this-setup-is-for.html</loc>
+  </url>
+
+  <url>
+    <loc>https://agencywphosting.com/insights/why-most-wordpress-sites-eventually-break.html</loc>
   </url>
 
 </urlset>
